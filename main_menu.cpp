@@ -51,5 +51,28 @@ int main()
     cout << setw(70) << " |" << setw(2) << "|" << endl;
     cout << setw(70) << " |" << setw(2) << "|" << endl;
     cout << setw(71) << "|" << endl;
-    
+    bool num = 0;
+    do
+    {
+        cout << "Enter number of the game that you want play: ";
+        cin >> TypeGame;
+        switch (TypeGame)
+        {
+        case 1:
+            "Hangman";
+            num = 1;
+            break;
+        case 2:
+            "Bingo";
+            num = 1;
+            break;
+        case 3:
+            cout << "Tic-Tac-Toe";
+            num = 1;
+            break;
+        default:
+            cout << "Please enter only numbers that are showing above! Try again!" << endl;
+            break;
+        }
+    } while (num != 1);
 }
