@@ -10,7 +10,18 @@ using namespace std;
 
 int main()
 {
-    
+    CONSOLE_FONT_INFOEX cfi;
+    cfi.cbSize = sizeof(cfi);
+    cfi.nFont = 0;
+    cfi.dwFontSize.X = 0;  // width of the signs
+    cfi.dwFontSize.Y = 19; // height
+    cfi.FontFamily = FF_DONTCARE;
+    cfi.FontWeight = FW_NORMAL;
+    wcscpy(cfi.FaceName, L"Arial Black"); // write the name of the font
+    SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
+
+    int TypeGame;
+
     system("Color 0E");
     cout << endl;
     cout << setw(50) << "MathWord";
