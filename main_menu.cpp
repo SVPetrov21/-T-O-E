@@ -56,17 +56,17 @@ int main()
     {
         cout << "Enter number of the game that you want play: ";
         cin >> TypeGame;
-        if (TypeGame == "1")
+        if (TypeGame == 1)
         {
             "Hangman";
             num = 1;
         }
-        else if (TypeGame == "2")
+        else if (TypeGame == 2)
         {
             "Bingo";
             num = 1;
         }
-        else if (TypeGame == "3")
+        else if (TypeGame == 3)
         {
             "Tic-tac-toe";
             num = 1;
