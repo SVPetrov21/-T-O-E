@@ -54,4 +54,70 @@ int main()
         }
         display(matrix);
         cout << endl;
+        if (matrix[0][0] == 0 && matrix[0][1] == 0 && matrix[0][2] == 0 && matrix[0][3] == 0 && matrix[0][4] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[1][0] == 0 && matrix[1][1] == 0 && matrix[1][2] == 0 && matrix[1][3] == 0 && matrix[1][4] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[2][0] == 0 && matrix[2][1] == 0 && matrix[2][2] == 0 && matrix[2][3] == 0 && matrix[2][4] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[3][0] == 0 && matrix[3][1] == 0 && matrix[3][2] == 0 && matrix[3][3] == 0 && matrix[3][4] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[4][0] == 0 && matrix[4][1] == 0 && matrix[4][2] == 0 && matrix[4][3] == 0 && matrix[4][4] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[0][0] == 0 && matrix[1][0] == 0 && matrix[2][0] == 0 && matrix[3][0] == 0 && matrix[4][0] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[0][0] == 0 && matrix[1][0] == 0 && matrix[2][0] == 0 && matrix[3][0] == 0 && matrix[4][0] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[0][1] == 0 && matrix[1][1] == 0 && matrix[2][1] == 0 && matrix[3][1] == 0 && matrix[4][1] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[0][2] == 0 && matrix[1][2] == 0 && matrix[2][2] == 0 && matrix[3][2] == 0 && matrix[4][2] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[0][3] == 0 && matrix[1][3] == 0 && matrix[2][3] == 0 && matrix[3][3] == 0 && matrix[4][3] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[0][4] == 0 && matrix[1][4] == 0 && matrix[2][4] == 0 && matrix[3][4] == 0 && matrix[4][4] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[0][0] == 0 && matrix[1][1] == 0 && matrix[2][2] == 0 && matrix[3][3] == 0 && matrix[4][4] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+        else if (matrix[4][0] == 0 && matrix[3][1] == 0 && matrix[2][2] == 0 && matrix[1][3] == 0 && matrix[0][4] == 0)
+        {
+            cout << "BINGO! Congratulations, you win!";
+            break;
+        }
+    }
 }
