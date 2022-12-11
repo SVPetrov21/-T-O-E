@@ -146,6 +146,80 @@ int playGame(string wordlist[])
 		word = wordlist[9];
 	}
 	display = word;
+	for (int i = 0; i < display.length(); i++)
+	{
+		display[i] = '*';
+	}
+	while (exposed < word.length())
+	{
+		cout << "Miss: " << misses << "; " << endl;
+		cout << "Enter a letter in word ";
+		cout << display << " : " << endl;
+		char response;
+		cin >> response;
+		bool goodGuess = false;
+		bool duplicate = false;
+		for (int i = 0; i < word.length(); i++)
+		{
+			if (response == word[i])
+			{
+				if (display[i] == word[i])
+				{
+					cout << response << " is already in the word." << endl;
+					duplicate = true;
+					break;
+				}
+				else
+				{
+					cout << "Well done! " << response << " is in the word" << endl;
+					display[i] = word[i];
+					exposed++;
+					goodGuess = true;
+				}
+			}
+		}
+		if (duplicate)
+		{
+			continue;
+		}
+		if (!goodGuess)
+		{
+			misses++;
+			cout << response << " is not in the word" << endl;
+			drawMan();
+		}
+		if (misses == 6)
+		{
+			cout << "You were killed! Try again." << endl;
+			break;
+			abort();
+		}
+	}
+	if (misses == 0)
+	{
+		cout << "CHEATER! Misses = 0";
+	}
+	if (misses == 1)
+	{
+		cout << "Expert! Misses = 1";
+	}
+	if (misses == 2)
+	{
+		cout << "Good job! Misses = 2";
+	}
+	if (misses == 3)
+	{
+		cout << "Decent! Misses = 3";
+	}
+	if (misses == 4)
+	{
+		cout << "Nearly killed! Misses = 4";
+	}
+	if (misses == 5)
+	{
+		cout << "OH MY GOD! Misses = 5";
+	}
+	return misses;
 }
 
 int main()
