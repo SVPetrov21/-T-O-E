@@ -56,23 +56,24 @@ int main()
     {
         cout << "Enter number of the game that you want play: ";
         cin >> TypeGame;
-        switch (TypeGame)
+        if (TypeGame == "1")
         {
-        case 1:
             "Hangman";
             num = 1;
-            break;
-        case 2:
+        }
+        else if (TypeGame == "2")
+        {
             "Bingo";
             num = 1;
-            break;
-        case 3:
-            cout << "Tic-Tac-Toe";
+        }
+        else if (TypeGame == "3")
+        {
+            "Tic-tac-toe";
             num = 1;
-            break;
-        default:
+        }
+        else
+        {
             cout << "Please enter only numbers that are showing above! Try again!" << endl;
-            break;
         }
     } while (num != 1);
 }
