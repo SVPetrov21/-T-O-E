@@ -4,15 +4,7 @@
 <img align="center" src="https://cdn.discordapp.com/attachments/1039554897697321015/1052230355366723644/3CE9415F-27A0-44AE-8806-9D6143E1C251-removebg-preview_3.png" width="350", height="350">
 </p>
 <br>
-<br>
-<br>
-<p align = "center">
-<img src = "https://img.shields.io/github/languages/count/SVPetrov21/-T-O-E?style=for-the-badge">
-<img src = "https://img.shields.io/github/contributors/SVPetrov21/-T-O-E?style=for-the-badge">
-<img src = "https://img.shields.io/github/repo-size/SVPetrov21/-T-O-E?style=for-the-badge">
-<img src = "https://img.shields.io/github/last-commit/SVPetrov21/-T-O-E?style=for-the-badge">
-<img src = "https://img.shields.io/github/languages/top/SVPetrov21/-T-O-E?style=for-the-badge">
-</p>
+<h2>"Talk is cheap. Show me the code." - Linus Torvalds.</h2>
 <br>
 
 
