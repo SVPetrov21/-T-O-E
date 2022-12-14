@@ -1,2 +1,7 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1092,5): error MSB6006: "link.exe" exited with code 1168.
-LINK : fatal error LNK1168: cannot open C:\Users\HP\OneDrive\Работен плот\-T-O-E\Source\main\x64\Debug\main.exe for writing
+﻿  hangman.cpp
+C:\Users\HP\OneDrive\Работен плот\-T-O-E\Source\main\main\hangman.cpp(94,10): warning C4566: character represented by universal-character-name '\u148D' cannot be represented in the current code page (1251)
+C:\Users\HP\OneDrive\Работен плот\-T-O-E\Source\main\main\hangman.cpp(94,10): warning C4566: character represented by universal-character-name '\u144C' cannot be represented in the current code page (1251)
+C:\Users\HP\OneDrive\Работен плот\-T-O-E\Source\main\main\hangman.cpp(94,10): warning C4566: character represented by universal-character-name '\u1515' cannot be represented in the current code page (1251)
+C:\Users\HP\OneDrive\Работен плот\-T-O-E\Source\main\main\hangman.cpp(94,10): warning C4566: character represented by universal-character-name '\u1455' cannot be represented in the current code page (1251)
+C:\Users\HP\OneDrive\Работен плот\-T-O-E\Source\main\main\hangman.cpp(94,10): warning C4566: character represented by universal-character-name '\u15EA' cannot be represented in the current code page (1251)
+  main.vcxproj -> C:\Users\HP\OneDrive\Работен плот\-T-O-E\Source\main\x64\Debug\main.exe

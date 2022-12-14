@@ -1,7 +1,9 @@
+//Libraries and files that the game requires.
 #include <iostream>
 #include "bingo.h"
 using namespace std;
 
+//Display the bingo board on the cmd.
 void display(int matrix[5][5])
 {
     for (int i = 0; i < 5; i++)
@@ -14,10 +16,12 @@ void display(int matrix[5][5])
     }
 }
 
+//Main function of the game.
 void playBingo()
 {
     int count = 0, random = 1, counter = 0;
     int matrix[5][5];
+    //Random number generator using the current time on our device.
     srand((unsigned)time(NULL));
     cout << "BINGO" << endl;
     cout << "Rules: Enter your bingo card consisting of 5 rows and 5 columns. Whenever you get 5 horizontal, vertical or diagonal guessed numbers you win and get Bingo!" << endl;
@@ -28,6 +32,7 @@ void playBingo()
             cin >> matrix[i][j];
         }
     }
+    //Number check algorithm.
     while (count != 5)
     {
         for (int i = 1; i <= 1; i++)
@@ -55,6 +60,7 @@ void playBingo()
         }
         display(matrix);
         cout << endl;
+        //Winning probabilities.
         if (matrix[0][0] == 0 && matrix[0][1] == 0 && matrix[0][2] == 0 && matrix[0][3] == 0 && matrix[0][4] == 0)
         {
             cout << "BINGO! Congratulations, you win!";

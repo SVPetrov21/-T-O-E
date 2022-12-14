@@ -1,10 +1,13 @@
+//Libraries and files that the game requires.
 #include <iostream>
 #include "tic-tac-toe.h"
 using namespace std;
 
+//Declare the tic tac toe board and the X player.
 char matrix[3][3] = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 char player = 'X';
 
+//Draw the board.
 void draw()
 {
 	system("cls");
@@ -13,54 +16,54 @@ void draw()
 	cout << "You must create a horizontal, vertical or a diagonal line with your symbol, which is X or O, and when you do, you beat your opponent" << endl;
 
 	for (int i = 0; i < 3; i++)
-	{
+	{	
 		for (int j = 0; j < 3; j++)
 		{
 			cout << " | " << matrix[i][j] << " ";
 		}
-		cout << endl;
 	}
 }
 
+//Input the character.
 void input()
 {
-	int num;
+	string num;
 	cout << "Please enter a number on the field: ";
 	cin >> num;
 
-	if (num == 1)
+	if (num == "1")
 	{
 		matrix[0][0] = player;
 	}
-	else if (num == 2)
+	else if (num == "2")
 	{
 		matrix[0][1] = player;
 	}
-	else if (num == 3)
+	else if (num == "3")
 	{
 		matrix[0][2] = player;
 	}
-	else if (num == 4)
+	else if (num == "4")
 	{
 		matrix[1][0] = player;
 	}
-	else if (num == 5)
+	else if (num == "5")
 	{
 		matrix[1][1] = player;
 	}
-	else if (num == 6)
+	else if (num == "6")
 	{
 		matrix[1][2] = player;
 	}
-	else if (num == 7)
+	else if (num == "7")
 	{
 		matrix[2][0] = player;
 	}
-	else if (num == 8)
+	else if (num == "8")
 	{
 		matrix[2][1] = player;
 	}
-	else if (num == 9)
+	else if (num == "9")
 	{
 		matrix[2][2] = player;
 	}
@@ -70,6 +73,7 @@ void input()
 	}
 }
 
+//Toggle the player on the board.
 void togglePlayer()
 {
 	if (player == 'X')
@@ -82,6 +86,7 @@ void togglePlayer()
 	}
 }
 
+//Winning probabilities.
 char win()
 {
 	//First player.
@@ -154,6 +159,7 @@ char win()
 	return '/';
 }
 
+//Main function of the game.
 void playTicTacToe()
 {
 	draw();

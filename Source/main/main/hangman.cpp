@@ -103,7 +103,7 @@ int playGame(std::string *wordlist)
 	cout << "|         '''''''''" << endl;
 	cout << endl;
 
-	//Random number generator.
+	//Random number generator using the current time on our device.
 	srand((unsigned)time(NULL));
 	for (int i = 1; i <= 1; i++)
 	{
@@ -145,6 +145,7 @@ int playGame(std::string *wordlist)
 	{
 		word = wordlist[9];
 	}
+	//Letter check algorithm.
 	display = word;
 	for (int i = 0; i < display.length(); i++)
 	{
@@ -195,6 +196,7 @@ int playGame(std::string *wordlist)
 			abort();
 		}
 	}
+	//Game end messages.
 	if (misses == 0)
 	{
 		cout << "CHEATER! Misses = 0";
